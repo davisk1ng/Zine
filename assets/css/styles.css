@@ -1,0 +1,248 @@
+
+body {
+    margin: 0;
+  }
+    
+  
+  /* Signal 1 */
+  body.lynch-grid .grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  padding: 40px;
+}
+
+body.lynch-grid .map img {
+  width: 100%;
+  height: auto;
+  border: 4px solid black;
+}
+
+body.lynch-grid .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+  
+  
+  /* Signal 2 */
+  body.bachelard-grid .doorway {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+
+body.bachelard-grid .left-panel,
+body.bachelard-grid .right-panel {
+  border: 4px solid black;
+  flex: 1 1 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+}
+body.bachelard-grid .left-panel img,
+body.bachelard-grid .right-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+body.bachelard-grid .content {
+  padding: 40px;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+  
+  /* Signal 3 */
+ body.venturi-flex {
+  background: #f7e9d2;
+}
+
+body.venturi-flex .chaos {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.venturi-flex .box {
+  position: absolute;
+  min-width: 260px;
+  max-width: 400px;
+  padding: 24px 32px;
+  background: #fffbe6;
+  border: 3px solid #bfa76a;
+  border-radius: 18px;
+  font-size: 1.2rem;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+  transition: box-shadow 0.2s;
+}
+
+body.venturi-flex .box.a {
+  top: 5%;
+  left: 5%;
+  z-index: 3;
+  transform: rotate(-6deg) translate(-30px, 0);
+}
+body.venturi-flex .box.b {
+  top: 15%;
+  left: 15%;
+  z-index: 2;
+  transform: rotate(4deg) translate(30px, 20px);
+}
+body.venturi-flex .box.c {
+  top: 8%;
+  left: 34%;
+  z-index: 1;
+  transform: rotate(-2deg) translate(60px, 40px);
+}
+
+body.venturi-flex .chaos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+
+body.venturi-flex .box {
+  width: 250px;
+  padding: 20px;
+  border: 4px solid black;
+}
+
+body.venturi-flex .a { margin-top: 40px; }
+body.venturi-flex .b { margin-left: 60px; }
+body.venturi-flex .c { margin-top: -20px; }
+
+body.venturi-flex .chaos .video {
+  position: absolute;
+  top: 17%;
+  left: 68%;
+  transform: translate(-50%, 0);
+  z-index: 5;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+  /* Signal 4 */
+  body.decertau-flex .path-layout {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+body.decertau-flex .path-image img {
+  width: 200px;
+  height: 100%;
+  border: 4px solid black;
+}
+
+body.decertau-flex .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+  /* Signal 5 */
+  body.jacobs-grid .street-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 100vh;
+}
+
+body.jacobs-grid .building {
+  border: 4px solid black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.jacobs-grid .left-building {
+  background-image: url("../images/building.jpg");
+}
+
+body.jacobs-grid .right-building {
+  background-image: url("../images/building2.jpg");
+}
+
+body.jacobs-grid .sidewalk-img {
+  background-image: url("../images/sidewalk3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+body.jacobs-grid .sidewalk {
+  padding: 40px;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+  
+  
+  /* Navigation Sign */
+  .hover-zone {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+  }
+  
+  .link {
+    position: absolute;
+    width: 50%;   /* half the sign width */
+    height: 30%;  /* one of five rows */
+    cursor: pointer;
+    color: white;
+    font-family:fantasy;
+  }
+  
+  /* Column positions */
+  .left  { left: 7%; }
+  .right { left: 58%; }
+  
+  /* Row positions */
+  .row1 { top: 15%; }
+  .row2 { top: 28%; }
+  .row3 { top: 41%; }
+  .row4 { top: 54%; }
+  .row5 { top: 66%; }
+  
+  .sign-container {
+    position: fixed;
+    right: 20px;
+    bottom: -255px;
+    width: 200px;
+    transition: transform 0.4s ease;
+    z-index: 3;
+  }
+  
+  /* Move the whole container, not just the image */
+  .hover-zone:hover ~ .sign-container,
+  .sign-container:hover {
+    transform: translateY(-200px);
+  }
+  
+  /* Make the image fill the container */
+  .sign {
+    width: 100%;
+    display: block;
+  }
+  
+  
+  
