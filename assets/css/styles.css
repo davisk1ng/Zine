@@ -364,9 +364,21 @@ body.jacobs-grid .sidewalk:hover {
   }
   
   /* Column positions */
-  .left  { left: 7%; }
-  .right { left: 58%; }
+  .left  { left: 5%; }
+  .right { left: 57%; }
   
+  /* Home link adjustment */
+  .sign-container .row1.left {
+    left: calc(7% + 10px);
+  }
+  
+  .sign-container .row1.right {
+    left: calc(58% + 10px);
+  }
+
+  .sign-container .row5.left {
+    left: calc(7% + 10px);
+  }
   /* Row positions */
   .row1 { top: 15%; }
   .row2 { top: 28%; }
@@ -377,10 +389,11 @@ body.jacobs-grid .sidewalk:hover {
   .sign-container {
     position: fixed;
     right: 20px;
-    bottom: -255px;
+    bottom: -245px;
     width: 200px;
     transition: transform 0.4s ease;
     z-index: 3;
+    font-family: highwaygothic, sans-serif;
   }
   
   /* Move the whole container, not just the image */
@@ -399,12 +412,14 @@ body.jacobs-grid .sidewalk:hover {
   .sign-container a.link {
     text-decoration: none;
     border-bottom: none;
-    font-weight: 400;
+    font-weight: 550;
     font-size: 14px;
     text-transform: uppercase;
     display: block;
   }
-
+  .sign-container .row4.right {
+    font-size: 11px;
+  }
 
   
   
