@@ -1,4 +1,5 @@
 
+
 body {
     margin: 0;
   }
@@ -34,11 +35,10 @@ body.index::before {
 }
 
 body.index h1,
-body.index h2,
-body.index p {
+body.index h2 {
   position: relative;
   z-index: 1;
-  color: yellow;
+  color: rgb(214, 182, 0);
   font-family: highwaygothic, sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   left: 40px;
@@ -46,11 +46,25 @@ body.index p {
 }
 
 body.index h1 {
-  font-size: 3.5rem;
+  left: 200px;
+  top: 40px;
+  font-size: 6.5rem;
   margin: 0;
   font-family: "sudz-black", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: yellow;
+}
+
+body.index p {
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  max-width: 230px;
+  z-index: 1;
+  color: rgb(255, 208, 0);
+  font-family: highwaygothic, sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -67,13 +81,27 @@ body.lynch-grid .map img {
   width: 100%;
   height: auto;
   border: 4px solid black;
+  transition: transform 0.4s ease;
 }
+
+body.lynch-grid .map img:hover {
+  transform: scale(1.05); }
 
 body.lynch-grid .text {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
+body.lynch-grid .text p {
+  transition: letter-spacing 0.3s ease;
+}
+
+body.lynch-grid .text p:hover {
+  letter-spacing: 0.05em;
+}
+
+
   
   
   /* Signal 2 */
@@ -100,6 +128,28 @@ body.bachelard-grid .right-panel img {
   object-fit: cover;
   display: block;
 }
+
+body.bachelard-grid .left-panel,
+body.bachelard-grid .right-panel {
+  transition: transform 0.4s ease;
+}
+
+body.bachelard-grid .left-panel:hover {
+  transform: translateX(-10px);
+}
+
+body.bachelard-grid .right-panel:hover {
+  transform: translateX(10px);
+}
+
+body.bachelard-grid .content {
+  transition: padding 0.4s ease;
+}
+
+body.bachelard-grid .content:hover {
+  padding: 50px;
+}
+
 
 
 body.bachelard-grid .content {
@@ -184,6 +234,23 @@ body.venturi-flex .chaos .video {
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
+body.venturi-flex .box {
+  transition: transform 0.2s ease;
+}
+
+body.venturi-flex .box:hover {
+  transform: rotate(1deg) scale(1.03);
+}
+
+body.venturi-flex iframe {
+  transition: transform 0.3s ease;
+}
+
+body.venturi-flex iframe:hover {
+  transform: scale(1.02);
+}
+
+
   /* Signal 4 */
   body.decertau-flex .path-layout {
   display: flex;
@@ -203,6 +270,23 @@ body.decertau-flex .text {
   flex-direction: column;
   gap: 20px;
 }
+
+body.decertau-flex .path-image img {
+  transition: transform 0.6s ease;
+}
+
+body.decertau-flex .path-image img:hover {
+  transform: translateY(-20px);
+}
+
+body.decertau-flex .text p {
+  transition: transform 0.3s ease;
+}
+
+body.decertau-flex .text p:hover {
+  transform: translateX(10px);
+}
+
   /* Signal 5 */
   body.jacobs-grid .street-grid {
   display: grid;
@@ -240,6 +324,22 @@ body.jacobs-grid .sidewalk {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+body.jacobs-grid .building {
+  transition: transform 0.4s ease;
+}
+
+body.jacobs-grid .building:hover {
+  transform: scale(1.02);
+}
+
+body.jacobs-grid .sidewalk {
+  transition: padding 0.4s ease;
+}
+
+body.jacobs-grid .sidewalk:hover {
+  padding: 50px;
 }
 
   
