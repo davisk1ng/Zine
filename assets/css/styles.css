@@ -67,6 +67,17 @@ body.index p {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+/* Intro */
+body.Page2 {
+  background: #f7e9d2;
+  background-image: url(../images/cityup.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+  z-index: 1;
+}
+
 
 
   /* Signal 1 */
@@ -342,14 +353,78 @@ body.jacobs-grid .sidewalk:hover {
   padding: 50px;
 }
 
-  
-  
-  /* Navigation Sign */
-  .hover-zone {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 120px;
+/* Field Notes*/
+
+body.Page8 {
+  position: relative;
+  background: #f7e9d2;
+  background-image:url(../images/background1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+body.Page8 .field-notes {
+  position: fixed;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-height: 100vh;
+  z-index: 2;
+}
+
+body.Page8 .notebook {
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+body.Page8 .notebook-left {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  width: 38%;
+  bottom: 15%;
+  padding: 20px;
+  overflow-y: auto;
+  color: #333;
+}
+
+body.Page8 .notebook-right {
+  position: absolute;
+  top: 15%;
+  right: 8%;
+  width: 38%;
+  bottom: 10%;
+  padding: 20px;
+  overflow-y: auto;
+  color: #333;
+}
+
+body.Page8 .notebook-left h1,
+body.Page8 .notebook-right h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-family: cursive, sans-serif;
+}
+
+body.Page8 .notebook-left p,
+body.Page8 .notebook-right p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-family:cursive, sans-serif;}
+
+/* Navigation Sign */
+body.Page8 .hover-zone {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 120px;
     height: 120px;
     z-index: 2;
   }
