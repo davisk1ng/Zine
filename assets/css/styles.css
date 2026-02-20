@@ -452,13 +452,14 @@ body.Page8 .notebook-right h1 {
 }
 
 body.Page8 .notebook-left p,
-body.Page8 .notebook-right p {
+body.Page8 .notebook-right p,
+body.Page8 .notes2 {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 12px;
   font-family:cursive, sans-serif;}
 
-body.Page8 .sketch {
+body.Page8 .sketch, body.Page8 .sketch2 {
   width: 150px;
   height: auto;
   display: block;
