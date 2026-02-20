@@ -458,6 +458,22 @@ body.Page8 .notebook-right p {
   margin-bottom: 12px;
   font-family:cursive, sans-serif;}
 
+body.Page8 .sketch {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+body.Page8 .sketch-left {
+  float: left;
+  margin: 0 14px 10px 0;
+}
+
+body.Page8 .sketch-right {
+  float: right;
+  margin: 0 0 10px 14px;
+}
+
 /* Essay */
 body.Page9 {
   background: #f7e9d2;
