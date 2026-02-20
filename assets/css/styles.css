@@ -489,6 +489,33 @@ body.Page9 .essay-box p {
   line-height: 1.7;
 }
 
+/* Page 10 - Closing */
+body.Page10 {
+  background: #f7e9d2;
+  background-image: url(../images/nightcity.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+body.Page10 .text1 {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  font-family: highwaygothic, sans-serif;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+body.Page10 .text2 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-family: highwaygothic, sans-serif;
+  color: rgba(255, 255, 255, 0.92);
+}
+
 /* Navigation Sign */
 body.Page8 .hover-zone {
   position: fixed;
