@@ -84,7 +84,7 @@ body.Page2 {
 body.Page2 img.cityup,
 body.Page2 img.cityup2 {
   position: fixed;
-  top: 50.68%;
+  top: 50%;
   left: 50%;
   width: 100vw;
   height: 100vh;
@@ -125,6 +125,7 @@ body.Page2 .signal-layer p {
   grid-template-columns: 1fr 2fr;
   gap: 40px;
   padding: 40px;
+  background-color: #baab95;
 }
 
 body.lynch-grid .map img {
@@ -155,6 +156,10 @@ body.lynch-grid .text p:hover {
   
   
   /* Signal 2 */
+  body.bachelard-grid {
+  background: #baab95;
+}
+
   body.bachelard-grid .doorway {
   display: flex;
   flex-direction: row;
@@ -204,11 +209,19 @@ body.bachelard-grid .content:hover {
 
 body.bachelard-grid .content {
   padding: 40px;
+  background:url(../images/door.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: #2f2418;
   border-left: 4px solid black;
   border-right: 4px solid black;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+body.bachelard-grid .content p, body.bachelard-grid .content h1, body.bachelard-grid .content h3 {
+  color: #e9d6bb;
 }
 
   
@@ -306,6 +319,7 @@ body.venturi-flex iframe:hover {
   display: flex;
   gap: 40px;
   padding: 40px;
+  background-color: #e9d6bb;
 }
 
 body.decertau-flex .path-image img {
