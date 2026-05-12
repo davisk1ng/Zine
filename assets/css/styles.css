@@ -41,12 +41,12 @@ body.index h2 {
   color: rgb(214, 182, 0);
   font-family: highwaygothic, sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  left: 40px;
+  left: 130px;
   top: 40px;
 }
 
 body.index h1 {
-  left: 200px;
+  left: 250px;
   top: 40px;
   font-size: 6.5rem;
   margin: 0;
@@ -58,8 +58,8 @@ body.index h1 {
 
 body.index p {
   position: absolute;
-  right: 15px;
-  top: 40px;
+  right: 425px;
+  top: 80px;
   max-width: 230px;
   z-index: 1;
   color: rgb(255, 208, 0);
